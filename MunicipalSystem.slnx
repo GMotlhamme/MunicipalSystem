@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MunicipalDataSystem/MunicipalDataSystem.csproj" />
+  <Project Path="MunicipalSystem/MunicipalSystem.csproj" />
+</Solution>
