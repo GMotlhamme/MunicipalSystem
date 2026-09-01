@@ -62,19 +62,19 @@ namespace MunicipalSystem
 
             if (progress == 0)
             {
-                lblEngagement.Text = "Let's get your report started!";
+                lblEngagement.Text = "Let's get your report started.";
             }
             else if (progress == 25)
             {
-                lblEngagement.Text = "Great start! Keep going.";
+                lblEngagement.Text = "Great start. Keep going.";
             }
             else if (progress == 50)
             {
-                lblEngagement.Text = "Halfway there! Tell us what happened.";
+                lblEngagement.Text = "Halfway there. Tell us what happened.";
             }
             else if (progress == 75)
             {
-                lblEngagement.Text = "Almost done! You can attach supporting evidence.";
+                lblEngagement.Text = "Almost done. You can attach supporting evidence.";
             }
             else
             {
@@ -162,7 +162,7 @@ namespace MunicipalSystem
 
             issueService.AddIssue(newIssue);
 
-            MessageBox.Show("Your issue has been successfully reported!", "Report Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Your issue has been successfully reported.", "Report Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             ClearForm();
         }

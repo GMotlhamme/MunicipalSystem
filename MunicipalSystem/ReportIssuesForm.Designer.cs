@@ -109,6 +109,7 @@
             // btnDocumentUpload
             // 
             btnDocumentUpload.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnDocumentUpload.Cursor = Cursors.Hand;
             btnDocumentUpload.Location = new Point(34, 388);
             btnDocumentUpload.Name = "btnDocumentUpload";
             btnDocumentUpload.Size = new Size(162, 42);
@@ -120,6 +121,7 @@
             // btnSubmit
             // 
             btnSubmit.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnSubmit.Cursor = Cursors.Hand;
             btnSubmit.Location = new Point(394, 388);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(162, 41);
@@ -131,6 +133,7 @@
             // btnBack
             // 
             btnBack.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnBack.Cursor = Cursors.Hand;
             btnBack.Location = new Point(571, 388);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(162, 41);
@@ -143,7 +146,7 @@
             // 
             lblEngagement.AutoSize = true;
             lblEngagement.Font = new Font("Segoe UI", 14F);
-            lblEngagement.Location = new Point(235, 18);
+            lblEngagement.Location = new Point(29, 22);
             lblEngagement.Name = "lblEngagement";
             lblEngagement.Size = new Size(318, 32);
             lblEngagement.TabIndex = 10;
@@ -162,7 +165,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.ForestGreen;
+            BackColor = Color.Yellow;
             ClientSize = new Size(782, 471);
             Controls.Add(progressReport);
             Controls.Add(lblEngagement);

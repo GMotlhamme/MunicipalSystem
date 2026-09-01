@@ -48,6 +48,7 @@
             // btnReportIssues
             // 
             btnReportIssues.BackColor = Color.White;
+            btnReportIssues.Cursor = Cursors.Hand;
             btnReportIssues.ImageAlign = ContentAlignment.MiddleRight;
             btnReportIssues.Location = new Point(8, 311);
             btnReportIssues.Name = "btnReportIssues";
@@ -59,23 +60,27 @@
             // 
             // btnLocalEventsAndAnnouncements
             // 
+            btnLocalEventsAndAnnouncements.BackColor = Color.Silver;
+            btnLocalEventsAndAnnouncements.Cursor = Cursors.No;
             btnLocalEventsAndAnnouncements.Enabled = false;
             btnLocalEventsAndAnnouncements.Location = new Point(270, 311);
             btnLocalEventsAndAnnouncements.Name = "btnLocalEventsAndAnnouncements";
             btnLocalEventsAndAnnouncements.Size = new Size(256, 42);
             btnLocalEventsAndAnnouncements.TabIndex = 2;
             btnLocalEventsAndAnnouncements.Text = "Local Events And Announcements";
-            btnLocalEventsAndAnnouncements.UseVisualStyleBackColor = true;
+            btnLocalEventsAndAnnouncements.UseVisualStyleBackColor = false;
             // 
             // btnServiceRequestStatus
             // 
+            btnServiceRequestStatus.BackColor = Color.Silver;
+            btnServiceRequestStatus.Cursor = Cursors.No;
             btnServiceRequestStatus.Enabled = false;
             btnServiceRequestStatus.Location = new Point(532, 311);
             btnServiceRequestStatus.Name = "btnServiceRequestStatus";
             btnServiceRequestStatus.Size = new Size(256, 42);
             btnServiceRequestStatus.TabIndex = 3;
             btnServiceRequestStatus.Text = "Service Request Status";
-            btnServiceRequestStatus.UseVisualStyleBackColor = true;
+            btnServiceRequestStatus.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -91,7 +96,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.ForestGreen;
+            BackColor = Color.Yellow;
             ClientSize = new Size(800, 450);
             Controls.Add(label2);
             Controls.Add(btnServiceRequestStatus);
