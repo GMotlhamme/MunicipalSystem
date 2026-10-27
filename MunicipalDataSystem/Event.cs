@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MunicipalDataSystem
+{
+    public class Event
+    {
+        public int EventId { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string Category { get; set; }
+        public DateTime Date { get; set; }
+        public string Location { get; set; }
+        public bool IsAnnouncement { get; set; }
+    }
+}

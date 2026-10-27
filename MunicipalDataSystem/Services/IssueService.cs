@@ -8,6 +8,8 @@ namespace MunicipalDataSystem.Services
 {
     public class IssueService
     {
+
+        //custom methods to carry out specific actions
         private readonly List<Issue> reportedIssues = new List<Issue>();
 
         public void AddIssue(Issue issue)

@@ -60,15 +60,15 @@
             // 
             // btnLocalEventsAndAnnouncements
             // 
-            btnLocalEventsAndAnnouncements.BackColor = Color.Silver;
-            btnLocalEventsAndAnnouncements.Cursor = Cursors.No;
-            btnLocalEventsAndAnnouncements.Enabled = false;
+            btnLocalEventsAndAnnouncements.BackColor = Color.White;
+            btnLocalEventsAndAnnouncements.Cursor = Cursors.Hand;
             btnLocalEventsAndAnnouncements.Location = new Point(270, 311);
             btnLocalEventsAndAnnouncements.Name = "btnLocalEventsAndAnnouncements";
             btnLocalEventsAndAnnouncements.Size = new Size(256, 42);
             btnLocalEventsAndAnnouncements.TabIndex = 2;
             btnLocalEventsAndAnnouncements.Text = "Local Events And Announcements";
             btnLocalEventsAndAnnouncements.UseVisualStyleBackColor = false;
+            btnLocalEventsAndAnnouncements.Click += btnLocalEventsAndAnnouncements_Click;
             // 
             // btnServiceRequestStatus
             // 

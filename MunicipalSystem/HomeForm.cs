@@ -13,5 +13,12 @@ namespace MunicipalSystem
             reportIssues.Show();
             this.Hide();
         }
+
+        private void btnLocalEventsAndAnnouncements_Click(object sender, EventArgs e)
+        {
+            LocalEventsAndAnnouncementsForm localEvents = new LocalEventsAndAnnouncementsForm();
+            localEvents.Show();
+            this.Hide();
+        }
     }
 }
