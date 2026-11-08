@@ -15,12 +15,16 @@ namespace MunicipalSystem
     public partial class ReportIssuesForm : Form
     {
         private string selectedFilePath = "";
+        //private readonly IssueService issueService.;
         private readonly IssueService issueService;
-        public ReportIssuesForm()
+        private readonly HomeForm homeForm;
+
+        public ReportIssuesForm(IssueService service, HomeForm home)
         {
             InitializeComponent();
-            issueService = new IssueService();
 
+            issueService = service;
+            homeForm = home;
         }
 
         private void ReportIssuesForm_Load(object sender, EventArgs e)
@@ -114,6 +118,7 @@ namespace MunicipalSystem
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 lblDocumentUpload.Text = Path.GetFileName(openFileDialog.FileName);
+                selectedFilePath = openFileDialog.FileName;
 
                 UpdateProgress();
             }
@@ -162,7 +167,26 @@ namespace MunicipalSystem
 
             issueService.AddIssue(newIssue);
 
-            MessageBox.Show("Your issue has been successfully reported.", "Report Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show(
+            //    $"Your issue has been successfully reported!\n\n" +
+            //    $"Tracking ID: {newIssue.RequestId}\n\n" +
+            //    "Please keep this ID to track your request.",
+            //    "Report Submitted",
+            //    MessageBoxButtons.OK,
+            //    MessageBoxIcon.Information);
+
+            //MessageBox.Show(
+            //    $"AVL Tree Balanced: {issueService.IsAVLTreeBalanced()}",
+            //    "AVL Tree Verification",
+            //    MessageBoxButtons.OK,
+            //    MessageBoxIcon.Information);
+
+            MessageBox.Show(
+                $"Red-Black Tree Valid: {issueService.IsRedBlackTreeValid()}",
+                "Red-Black Tree Verification",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+
 
             ClearForm();
         }
@@ -182,8 +206,7 @@ namespace MunicipalSystem
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            HomeForm home = new HomeForm();
-            home.Show();
+            homeForm.Show();
             this.Close();
         }
     }

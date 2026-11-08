@@ -72,15 +72,15 @@
             // 
             // btnServiceRequestStatus
             // 
-            btnServiceRequestStatus.BackColor = Color.Silver;
-            btnServiceRequestStatus.Cursor = Cursors.No;
-            btnServiceRequestStatus.Enabled = false;
+            btnServiceRequestStatus.BackColor = Color.White;
+            btnServiceRequestStatus.Cursor = Cursors.Hand;
             btnServiceRequestStatus.Location = new Point(532, 311);
             btnServiceRequestStatus.Name = "btnServiceRequestStatus";
             btnServiceRequestStatus.Size = new Size(256, 42);
             btnServiceRequestStatus.TabIndex = 3;
             btnServiceRequestStatus.Text = "Service Request Status";
             btnServiceRequestStatus.UseVisualStyleBackColor = false;
+            btnServiceRequestStatus.Click += btnServiceRequestStatus_Click;
             // 
             // label2
             // 

@@ -13,17 +13,18 @@ namespace MunicipalSystem
 {
     public partial class LocalEventsAndAnnouncementsForm : Form
     {
-        public LocalEventsAndAnnouncementsForm()
+        public LocalEventsAndAnnouncementsForm(HomeForm homeForm)
         {
             InitializeComponent();
             LoadSampleEvents();
             LoadCategories();
             LoadRecommendations();
+            this.homeForm = homeForm;
         }
 
         // Handles event storage, searching and recommendations.
         private readonly EventService eventService = new EventService();
-
+        private readonly HomeForm homeForm;
         private void LoadSampleEvents()
         {
             // Sample municipal events for testing the search and recommendation features.
@@ -285,8 +286,7 @@ namespace MunicipalSystem
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            HomeForm home = new HomeForm();
-            home.Show();
+            homeForm.Show();
             this.Close();
         }
     }
