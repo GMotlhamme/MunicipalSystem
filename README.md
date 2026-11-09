@@ -31,7 +31,7 @@ The application was developed using the following technologies:
 Before running the application, ensure that the following are installed:
 
 - Visual Studio with the .NET desktop development workload.
-- A compatible .NET SDK and runtime.
+- .NET 9 SDK and runtime.
 - Windows operating system.
 
 ### Steps
