@@ -52,7 +52,7 @@
             dgvRequests.Location = new Point(403, 31);
             dgvRequests.Name = "dgvRequests";
             dgvRequests.RowHeadersWidth = 51;
-            dgvRequests.Size = new Size(508, 292);
+            dgvRequests.Size = new Size(695, 324);
             dgvRequests.TabIndex = 0;
             dgvRequests.CellContentClick += dgvRequests_CellContentClick;
             // 
@@ -60,15 +60,15 @@
             // 
             txtRequestId.Location = new Point(29, 41);
             txtRequestId.Name = "txtRequestId";
-            txtRequestId.Size = new Size(195, 27);
+            txtRequestId.Size = new Size(340, 27);
             txtRequestId.TabIndex = 1;
             txtRequestId.TextChanged += txtRequestId_TextChanged;
             // 
             // btnTrackRequest
             // 
-            btnTrackRequest.Location = new Point(240, 41);
+            btnTrackRequest.Location = new Point(210, 94);
             btnTrackRequest.Name = "btnTrackRequest";
-            btnTrackRequest.Size = new Size(131, 29);
+            btnTrackRequest.Size = new Size(159, 29);
             btnTrackRequest.TabIndex = 2;
             btnTrackRequest.Text = "Track Request";
             btnTrackRequest.UseVisualStyleBackColor = true;
@@ -77,19 +77,19 @@
             // lblRequestDetails
             // 
             lblRequestDetails.AutoSize = true;
-            lblRequestDetails.Location = new Point(29, 161);
-            lblRequestDetails.MaximumSize = new Size(250, 200);
-            lblRequestDetails.MinimumSize = new Size(190, 130);
+            lblRequestDetails.Location = new Point(29, 188);
+            lblRequestDetails.MaximumSize = new Size(350, 250);
+            lblRequestDetails.MinimumSize = new Size(340, 230);
             lblRequestDetails.Name = "lblRequestDetails";
-            lblRequestDetails.Size = new Size(190, 130);
+            lblRequestDetails.Size = new Size(340, 230);
             lblRequestDetails.TabIndex = 3;
             lblRequestDetails.Text = "Details";
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(664, 488);
+            btnBack.Location = new Point(787, 607);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(247, 29);
+            btnBack.Size = new Size(311, 29);
             btnBack.TabIndex = 4;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@
             // 
             // btnViewPriorityRequest
             // 
-            btnViewPriorityRequest.Location = new Point(29, 88);
+            btnViewPriorityRequest.Location = new Point(29, 94);
             btnViewPriorityRequest.Name = "btnViewPriorityRequest";
             btnViewPriorityRequest.Size = new Size(161, 29);
             btnViewPriorityRequest.TabIndex = 6;
@@ -116,9 +116,9 @@
             // 
             // grpNetworkAnalysis
             // 
-            grpNetworkAnalysis.Location = new Point(664, 351);
+            grpNetworkAnalysis.Location = new Point(787, 392);
             grpNetworkAnalysis.Name = "grpNetworkAnalysis";
-            grpNetworkAnalysis.Size = new Size(247, 125);
+            grpNetworkAnalysis.Size = new Size(311, 183);
             grpNetworkAnalysis.TabIndex = 7;
             grpNetworkAnalysis.TabStop = false;
             grpNetworkAnalysis.Text = "Municipal Network Analysis";
@@ -126,17 +126,17 @@
             // cmbStartLocation
             // 
             cmbStartLocation.FormattingEnabled = true;
-            cmbStartLocation.Location = new Point(29, 353);
+            cmbStartLocation.Location = new Point(29, 462);
             cmbStartLocation.Name = "cmbStartLocation";
-            cmbStartLocation.Size = new Size(195, 28);
+            cmbStartLocation.Size = new Size(354, 28);
             cmbStartLocation.TabIndex = 8;
             cmbStartLocation.Text = "Select starting location";
             // 
             // btnBFS
             // 
-            btnBFS.Location = new Point(29, 401);
+            btnBFS.Location = new Point(29, 510);
             btnBFS.Name = "btnBFS";
-            btnBFS.Size = new Size(195, 29);
+            btnBFS.Size = new Size(354, 29);
             btnBFS.TabIndex = 9;
             btnBFS.Text = "Breadth-First Search";
             btnBFS.UseVisualStyleBackColor = true;
@@ -144,9 +144,9 @@
             // 
             // btnDFS
             // 
-            btnDFS.Location = new Point(29, 443);
+            btnDFS.Location = new Point(29, 552);
             btnDFS.Name = "btnDFS";
-            btnDFS.Size = new Size(195, 29);
+            btnDFS.Size = new Size(354, 29);
             btnDFS.TabIndex = 10;
             btnDFS.Text = "Depth-First Search";
             btnDFS.UseVisualStyleBackColor = true;
@@ -154,9 +154,9 @@
             // 
             // btnMST
             // 
-            btnMST.Location = new Point(29, 488);
+            btnMST.Location = new Point(29, 597);
             btnMST.Name = "btnMST";
-            btnMST.Size = new Size(195, 29);
+            btnMST.Size = new Size(354, 29);
             btnMST.TabIndex = 11;
             btnMST.Text = "Minimum Spanning Tree";
             btnMST.UseVisualStyleBackColor = true;
@@ -165,14 +165,14 @@
             // lstNetworkResults
             // 
             lstNetworkResults.FormattingEnabled = true;
-            lstNetworkResults.Location = new Point(278, 353);
+            lstNetworkResults.Location = new Point(403, 392);
             lstNetworkResults.Name = "lstNetworkResults";
-            lstNetworkResults.Size = new Size(357, 164);
+            lstNetworkResults.Size = new Size(357, 244);
             lstNetworkResults.TabIndex = 12;
             // 
             // btnProcessPriority
             // 
-            btnProcessPriority.Location = new Point(29, 119);
+            btnProcessPriority.Location = new Point(210, 144);
             btnProcessPriority.Name = "btnProcessPriority";
             btnProcessPriority.Size = new Size(161, 29);
             btnProcessPriority.TabIndex = 13;
@@ -182,9 +182,9 @@
             // 
             // btnResolveRequest
             // 
-            btnResolveRequest.Location = new Point(241, 90);
+            btnResolveRequest.Location = new Point(29, 144);
             btnResolveRequest.Name = "btnResolveRequest";
-            btnResolveRequest.Size = new Size(130, 29);
+            btnResolveRequest.Size = new Size(161, 29);
             btnResolveRequest.TabIndex = 14;
             btnResolveRequest.Text = "Resolve Request";
             btnResolveRequest.UseVisualStyleBackColor = true;
@@ -195,7 +195,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Yellow;
-            ClientSize = new Size(937, 561);
+            ClientSize = new Size(1124, 659);
             Controls.Add(btnResolveRequest);
             Controls.Add(btnProcessPriority);
             Controls.Add(lstNetworkResults);
